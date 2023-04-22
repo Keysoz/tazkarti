@@ -1,0 +1,2333 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)https://www.tazkarti.com/#/profile/user-tickets -->
+<html class="no-js" lang="" dir="ltr" id="htmlTag">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <title>Tazkarti</title>
+  <!--<base href="/">-->
+  <base href=".">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script async="" src="./Tazkarti_files/analytics.js.download"></script>
+  <script type="text/javascript" src="./Tazkarti_files/ruxitagentjs_ICA2NVfgjqru_10257221222094147.js.download"
+    data-dtconfig="rid=RID_2418|rpid=-1287063829|domain=tazkarti.com|reportUrl=/rb_da15e7f0-b8cb-4f37-bfc4-656bc3affa3f|app=ea7c4b59f27d43eb|featureHash=ICA2NVfgjqru|vcv=2|rdnt=1|uxrgce=1|bp=3|cuc=hw6ez4tb|mel=100000|dpvc=1|ssv=4|lastModification=1681896006119|dtVersion=10257221222094147|tp=500,50,0,1|uxdcw=1500|agentUri=/ruxitagentjs_ICA2NVfgjqru_10257221222094147.js"></script>
+  <link rel="icon" type="image/x-icon" href="https://www.tazkarti.com/favicon.ico">
+  <link rel="stylesheet" href="styles.327c910cc4259b30e35b.css">
+  <style>
+    .modal-open {
+      padding-right: 0 !important;
+      padding-left: 0 !important
+    }
+  </style>
+  <script charset="utf-8" src="./Tazkarti_files/1.e741ffd9d62dcc352e3d.js.download"></script>
+  <script charset="utf-8" src="./Tazkarti_files/8.8e9ece1fc647ac8e32df.js.download"></script>
+  <style>
+    .all-tickets {
+      margin-bottom: 40px
+    }
+
+    .events-tickets {
+      margin-bottom: 70px
+    }
+
+    .sports-tickets {
+      margin-bottom: 50px
+    }
+
+    .ticket-item {
+      background-color: #fff;
+      border-right: 3px dashed #eee;
+      border-left: 3px dashed #eee;
+      margin-bottom: 30px;
+      position: relative
+    }
+
+    .ticket-item .ticket-first-row {
+      display: flex;
+      flex: 1 1 auto;
+      align-items: center;
+      padding: 10px 15px;
+      border-bottom: 2px dashed #eee
+    }
+
+    .ticket-item .ticket-first-row .button-grey {
+      pointer-events: none
+    }
+
+    html[dir=ltr] .ticket-item .ticket-first-row div {
+      border-right: 1px solid #d4d4d4;
+      padding-right: 20px;
+      margin-right: 20px
+    }
+
+    html[dir=rtl] .ticket-item .ticket-first-row div {
+      border-left: 1px solid #d4d4d4;
+      padding-left: 20px;
+      margin-left: 20px
+    }
+
+    .ticket-item .ticket-first-row div:last-of-type {
+      border: 0 !important;
+      margin: 0;
+      padding: 0
+    }
+
+    .ticket-item .ticket-first-row label {
+      display: block;
+      color: #7f7f7f;
+      font-size: 13px;
+      margin-bottom: 3px
+    }
+
+    .ticket-item .ticket-first-row span {
+      font-size: 15px;
+      font-weight: 700
+    }
+
+    html[dir=ltr] .ticket-item .ticket-first-row .button-cancel {
+      margin: 0 0 0 auto
+    }
+
+    html[dir=rtl] .ticket-item .ticket-first-row .button-cancel {
+      margin: 0 auto 0 0
+    }
+
+    .ticket-item .ticket-second-row {
+      padding: 10px 15px
+    }
+
+    .ticket-item .ticket-second-row:not(:last-child) {
+      border-bottom: 3px dashed #eee
+    }
+
+    .ticket-item .match {
+      margin-bottom: 0
+    }
+
+    .ticket-item .match .top {
+      background-color: #f2f2f2
+    }
+
+    .ticket-item .match .top .teams {
+      background: 0 0
+    }
+
+    .ticket-item .match .top .event-block {
+      width: 40%;
+      font-size: 0
+    }
+
+    .ticket-item .match .top .event-block .image-holder {
+      display: inline-block;
+      vertical-align: middle;
+      height: 60px;
+      width: 60px;
+      background-color: #fff;
+      padding: 2px;
+      border: 2px solid #e7e7e7
+    }
+
+    html[dir=ltr] .ticket-item .match .top .event-block .image-holder {
+      margin-right: 10px
+    }
+
+    html[dir=rtl] .ticket-item .match .top .event-block .image-holder {
+      margin-left: 10px
+    }
+
+    .ticket-item .match .top .event-block .image-holder>img {
+      display: block;
+      width: 100%;
+      height: 100%
+    }
+
+    .ticket-item .match .top .event-block .image-holder .empty {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f6f6f6
+    }
+
+    .ticket-item .match .top .event-block .image-holder .empty>img {
+      width: 50%;
+      height: auto
+    }
+
+    .ticket-item .match .top .event-block .event-title {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 16px;
+      font-family: EncodeSansExpanded-Bold, arial, tahoma;
+      max-width: calc(100% - 100px)
+    }
+
+    .ticket-item:after,
+    .ticket-item:before {
+      content: '';
+      width: 18px;
+      height: 18px;
+      border-radius: 50%;
+      background-color: #eee;
+      position: absolute;
+      top: 55px
+    }
+
+    html[dir=ltr] .ticket-item:before {
+      left: -10px
+    }
+
+    html[dir=ltr] .ticket-item:after,
+    html[dir=rtl] .ticket-item:before {
+      right: -10px
+    }
+
+    html[dir=rtl] .ticket-item:after {
+      left: -10px
+    }
+
+    #purchase-order-modal .purchase-slider {
+      padding: 0 30px
+    }
+
+    #purchase-order-modal .match {
+      margin-bottom: 10px
+    }
+
+    #purchase-order-modal .match .top {
+      padding: 0;
+      flex-direction: column;
+      background-color: #fff
+    }
+
+    #purchase-order-modal .match .top .event-block {
+      font-size: 0
+    }
+
+    #purchase-order-modal .match .top .event-block .image-holder {
+      display: inline-block;
+      vertical-align: middle;
+      height: 60px;
+      width: 60px;
+      margin-right: 10px;
+      background-color: #fff;
+      padding: 2px;
+      border: 2px solid #e7e7e7
+    }
+
+    #purchase-order-modal .match .top .event-block .image-holder>img {
+      display: block;
+      width: 100%;
+      height: 100%
+    }
+
+    #purchase-order-modal .match .top .event-block .image-holder .empty {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f6f6f6
+    }
+
+    #purchase-order-modal .match .top .event-block .image-holder .empty>img {
+      width: 50%;
+      height: auto
+    }
+
+    #purchase-order-modal .match .top .event-block .event-title {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 16px;
+      font-family: EncodeSansExpanded-Bold, arial, tahoma;
+      max-width: calc(100% - 70px)
+    }
+
+    #purchase-order-modal .match .top .teams {
+      position: relative;
+      max-width: none
+    }
+
+    html[dir=ltr] #purchase-order-modal .match .top .teams {
+      padding: 0 69px 0 0
+    }
+
+    html[dir=rtl] #purchase-order-modal .match .top .teams {
+      padding: 0 0 0 69px
+    }
+
+    #purchase-order-modal .match .top .teams .image-holder {
+      border: none;
+      width: 50px;
+      height: 50px
+    }
+
+    #purchase-order-modal .match .top .teams .image-holder>div {
+      border: none
+    }
+
+    html[dir=ltr] #purchase-order-modal .match .top .teams .image-holder.first {
+      margin-right: 10px
+    }
+
+    html[dir=rtl] #purchase-order-modal .match .top .teams .image-holder.first {
+      margin-left: 10px
+    }
+
+    #purchase-order-modal .match .top .teams .image-holder.second {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: 0
+    }
+
+    html[dir=ltr] #purchase-order-modal .match .top .teams .image-holder.second {
+      right: 13px
+    }
+
+    html[dir=rtl] #purchase-order-modal .match .top .teams .image-holder.second {
+      left: 13px
+    }
+
+    #purchase-order-modal .match .top .teams .team-names {
+      width: 100%;
+      max-width: calc(100% - 60px)
+    }
+
+    #purchase-order-modal .match .top .teams .team-names .team-name {
+      display: block;
+      font-size: 18px;
+      font-family: EncodeSansExpanded-Bold, arial, tahoma;
+      margin: 0;
+      max-width: calc(50% - 35px)
+    }
+
+    html[dir=ltr] #purchase-order-modal .match .top .teams .team-names .team-name.first {
+      float: left;
+      text-align: left
+    }
+
+    html[dir=rtl] #purchase-order-modal .match .top .teams .team-names .team-name.first {
+      float: right;
+      text-align: right
+    }
+
+    html[dir=ltr] #purchase-order-modal .match .top .teams .team-names .team-name.second {
+      float: right;
+      text-align: right
+    }
+
+    html[dir=rtl] #purchase-order-modal .match .top .teams .team-names .team-name.second {
+      float: left;
+      text-align: left
+    }
+
+    #purchase-order-modal .match .top .teams .team-names .vs {
+      position: absolute;
+      top: 50%;
+      left: 45%;
+      transform: translate(-50%, -50%)
+    }
+
+    #purchase-order-modal .match .top .blocks {
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 5px;
+      border: 0 !important
+    }
+
+    #purchase-order-modal .match .top .blocks .one-block {
+      margin-bottom: 10px
+    }
+
+    #purchase-order-modal .match .top .blocks .one-block .info {
+      width: 100%;
+      max-width: 100%
+    }
+
+    #purchase-order-modal .match .top .blocks .one-block .info .first {
+      white-space: nowrap;
+      font-size: 14px;
+      color: #666
+    }
+
+    #purchase-order-modal .match .top .blocks .one-block.stadium .info {
+      width: 100%
+    }
+
+    #purchase-order-modal .match .top .blocks .one-block.stadium .info>span {
+      white-space: nowrap;
+      font-size: 14px;
+      color: #666
+    }
+
+    #purchase-order-modal .match .top .blocks .one-block.when {
+      margin-top: -4px
+    }
+
+    #purchase-order-modal .match .top .blocks .one-block>.image-holder {
+      height: 18px
+    }
+
+    #purchase-order-modal .match .top .blocks:after {
+      display: none
+    }
+
+    #purchase-order-modal .table-holder th {
+      color: #b8b8b8 !important;
+      font-weight: 300;
+      border-top: 1px solid #cbcbcb !important;
+      border-bottom: 1px solid #cbcbcb !important;
+      padding: 10px 5px !important
+    }
+
+    #purchase-order-modal .table-holder td {
+      padding: 10px 5px !important
+    }
+
+    #purchase-order-modal .total-price {
+      padding: 0 30px
+    }
+
+    #purchase-order-modal .total-price .section .price-row {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      padding: 10px 0
+    }
+
+    #purchase-order-modal .total-price .section .price-row.sub-total {
+      border-top: 1px solid #eee
+    }
+
+    #purchase-order-modal .total-price .section .price-row .price {
+      font-family: EncodeSansExpanded-Bold, arial, tahoma
+    }
+
+    #purchase-order-modal .total-price .section:not(:first-child) {
+      border-top: 3px solid #eee
+    }
+
+    #purchase-order-modal .total-price .section:last-child {
+      margin-top: 10px
+    }
+
+    #purchase-order-modal .total-price .section:last-child .price-row .label,
+    #purchase-order-modal .total-price .section:last-child .price-row .price {
+      font-size: 16px
+    }
+
+    #purchase-order-modal .total-price .section .section-label {
+      text-align: center;
+      font-family: EncodeSansExpanded-Bold, arial, tahoma;
+      padding: 10px 0
+    }
+
+    #purchase-order-modal.modal {
+      display: block;
+      height: 0;
+      overflow: hidden
+    }
+
+    #purchase-order-modal.show {
+      height: auto;
+      max-height: 100%;
+      overflow: auto
+    }
+
+    #purchase-order-modal .slider-arrows {
+      position: relative
+    }
+
+    #purchase-order-modal .slider-arrows a {
+      position: absolute;
+      font-size: 22px;
+      color: #cacaca;
+      top: 30px;
+      cursor: pointer;
+      z-index: 99;
+      font-family: monospace
+    }
+
+    #purchase-order-modal .slider-arrows a i {
+      font-weight: 700
+    }
+
+    #purchase-order-modal .slider-arrows a:hover i {
+      color: #219f45
+    }
+
+    #purchase-order-modal .slider-arrows #slider-left {
+      transform: rotate(180deg)
+    }
+
+    html[dir=ltr] #purchase-order-modal .slider-arrows #slider-left {
+      left: 0
+    }
+
+    html[dir=ltr] #purchase-order-modal .slider-arrows #slider-right,
+    html[dir=rtl] #purchase-order-modal .slider-arrows #slider-left {
+      right: 0
+    }
+
+    html[dir=rtl] #purchase-order-modal .slider-arrows #slider-right {
+      left: 0
+    }
+
+    .datepicker-wrapper {
+      position: relative
+    }
+
+    .datepicker-wrapper .gj-icon {
+      font-size: 0;
+      width: 100%;
+      height: 100%
+    }
+
+    .datepicker-wrapper .gj-datepicker {
+      height: 100%
+    }
+
+    .datepicker-wrapper .datepicker {
+      border: 0;
+      height: 100%;
+      padding: 12px;
+      font-size: 13px;
+      color: #7e7e7e;
+      text-align: inherit
+    }
+
+    .datepicker-wrapper .icomoon-calendar {
+      position: absolute;
+      top: 11px;
+      font-size: 18px;
+      color: #7e7e7e;
+      pointer-events: none
+    }
+
+    html[dir=ltr] .datepicker-wrapper .icomoon-calendar {
+      right: 15px
+    }
+
+    html[dir=rtl] .datepicker-wrapper .icomoon-calendar {
+      left: 15px
+    }
+
+    .gj-picker .chevron-left {
+      font-family: icomoon !important;
+      speak-as: none;
+      font-style: normal;
+      font-weight: 400;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      transform: rotate(180deg);
+      font-size: 20px;
+      top: 12px !important
+    }
+
+    .gj-picker .chevron-left:before {
+      content: "\e906"
+    }
+
+    html[dir=rtl] .gj-picker .chevron-left {
+      transform: rotate(0)
+    }
+
+    .gj-picker .chevron-right {
+      font-family: icomoon !important;
+      speak-as: none;
+      font-style: normal;
+      font-weight: 400;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      font-size: 20px;
+      top: 12px !important
+    }
+
+    .gj-picker .chevron-right:before {
+      content: "\e906"
+    }
+
+    html[dir=rtl] .gj-picker .chevron-right {
+      transform: rotate(180deg)
+    }
+
+    #timeoutModal h2 {
+      font-size: 29px
+    }
+
+    #timeoutModal img {
+      vertical-align: sub;
+      width: 29px
+    }
+
+    @media (max-width:1200px) {
+      .ticket-item .match .top .event-block .event-title {
+        font-size: 14px
+      }
+    }
+
+    @media (max-width:991px) {
+      .events-tickets {
+        margin-bottom: 50px
+      }
+
+      .ticket-item {
+        margin-bottom: 40px
+      }
+
+      .ticket-item .match .top {
+        padding: 0;
+        flex-direction: column
+      }
+
+      .ticket-item .match .top .event-block {
+        width: 100%;
+        padding: 10px
+      }
+
+      .ticket-item .match .top .teams {
+        position: relative
+      }
+
+      html[dir=ltr] .ticket-item .match .top .teams {
+        padding: 13px 63px 13px 13px
+      }
+
+      html[dir=rtl] .ticket-item .match .top .teams {
+        padding: 13px 13px 13px 63px
+      }
+
+      .ticket-item .match .top .teams .image-holder,
+      .ticket-item .match .top .teams .image-holder>div {
+        border: none
+      }
+
+      html[dir=ltr] .ticket-item .match .top .teams .image-holder.first {
+        margin-right: 10px
+      }
+
+      html[dir=rtl] .ticket-item .match .top .teams .image-holder.first {
+        margin-left: 10px
+      }
+
+      .ticket-item .match .top .teams .image-holder.second {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0
+      }
+
+      html[dir=ltr] .ticket-item .match .top .teams .image-holder.second {
+        right: 13px
+      }
+
+      html[dir=rtl] .ticket-item .match .top .teams .image-holder.second {
+        left: 13px
+      }
+
+      .ticket-item .match .top .teams .team-names {
+        width: calc(100% - 50px)
+      }
+
+      .ticket-item .match .top .teams .team-names .team-name {
+        display: block;
+        font-size: 16px;
+        font-family: EncodeSansExpanded-Bold, arial, tahoma
+      }
+
+      html[dir=ltr] .ticket-item .match .top .teams .team-names .team-name.first {
+        float: left
+      }
+
+      html[dir=ltr] .ticket-item .match .top .teams .team-names .team-name.second,
+      html[dir=rtl] .ticket-item .match .top .teams .team-names .team-name.first {
+        float: right
+      }
+
+      html[dir=rtl] .ticket-item .match .top .teams .team-names .team-name.second {
+        float: left
+      }
+
+      .ticket-item .match .top .teams .team-names .vs {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+      }
+
+      .ticket-item .match .top .blocks {
+        display: block;
+        border-top: 1px solid #e2e2e2
+      }
+
+      .ticket-item .match .top .blocks .one-block {
+        width: calc(100% / 3);
+        padding: 12px 10px;
+        text-align: center
+      }
+
+      html[dir=ltr] .ticket-item .match .top .blocks .one-block {
+        float: left
+      }
+
+      html[dir=rtl] .ticket-item .match .top .blocks .one-block {
+        float: right
+      }
+
+      html[dir=ltr] .ticket-item .match .top .blocks .one-block:not(:last-child) {
+        border-right: 1px solid #d8d8d8
+      }
+
+      html[dir=rtl] .ticket-item .match .top .blocks .one-block:not(:last-child) {
+        border-left: 1px solid #d8d8d8
+      }
+
+      .ticket-item .match .top .blocks .one-block .info {
+        max-width: calc(100% - 40px);
+        width: auto !important
+      }
+
+      html[dir=ltr] .ticket-item .match .top .blocks .one-block .info {
+        text-align: left
+      }
+
+      html[dir=rtl] .ticket-item .match .top .blocks .one-block .info {
+        text-align: right
+      }
+
+      #purchase-order-modal .match .top .blocks {
+        margin-top: 0
+      }
+
+      #purchase-order-modal .matches .match {
+        margin-bottom: 0
+      }
+    }
+
+    @media (max-width:770px) {
+      .ticket-item .match .top .teams .team-names .team-name {
+        font-size: 13px
+      }
+
+      .ticket-item .match .top .teams .team-names .vs {
+        font-size: 10px;
+        margin: 0
+      }
+
+      .ticket-item .match .top .blocks {
+        padding: 0
+      }
+
+      .ticket-item .match .top .blocks .one-block .image-holder {
+        height: 22px
+      }
+
+      html[dir=ltr] .ticket-item .match .top .blocks .one-block .image-holder {
+        margin-right: 5px
+      }
+
+      html[dir=rtl] .ticket-item .match .top .blocks .one-block .image-holder {
+        margin-left: 5px
+      }
+
+      .ticket-item .match .top .blocks .one-block .info>span {
+        font-size: 10px
+      }
+
+      .ticket-item .match .top .blocks .one-block .info>span>span {
+        font-size: 9px
+      }
+
+      .ticket-item .match .top .blocks .one-block .info .first {
+        font-size: 10px
+      }
+
+      html[dir=ltr] .ticket-item .match .top .blocks .one-block .info .first {
+        text-align: left
+      }
+
+      html[dir=rtl] .ticket-item .match .top .blocks .one-block .info .first {
+        text-align: right
+      }
+
+      .ticket-item .match .top .blocks .one-block .info .second {
+        font-size: 9px
+      }
+
+      html[dir=ltr] .ticket-item .match .top .blocks .one-block .info .second {
+        text-align: left
+      }
+
+      html[dir=rtl] .ticket-item .match .top .blocks .one-block .info .second {
+        text-align: right
+      }
+
+      .ticket-item .match .top .blocks:after,
+      .ticket-item .match .top .blocks:before {
+        height: 46%
+      }
+
+      .ticket-item .match .bottom {
+        font-size: 10px
+      }
+
+      html[dir=ltr] .ticket-item .match .bottom .status {
+        padding-left: 10px
+      }
+
+      html[dir=rtl] .ticket-item .match .bottom .status {
+        padding-right: 10px
+      }
+
+      .ticket-item .match .bottom .status:before {
+        width: 6px;
+        height: 6px
+      }
+
+      .ticket-item .transfer-btn .button {
+        font-size: 13px;
+        height: 45px;
+        line-height: 45px
+      }
+    }
+
+    @media (max-width:575px) {
+      .ticket-item .ticket-details div {
+        border: 0;
+        padding: 0
+      }
+
+      .ticket-item .ticket-details div label {
+        font-size: 10px
+      }
+
+      .ticket-item .ticket-details div span {
+        font-size: 12px
+      }
+
+      .ticket-item .ticket-details div:nth-child(3),
+      .ticket-item .ticket-details div:nth-child(4) {
+        display: none
+      }
+
+      .ticket-item .ticket-details div:last-child {
+        text-align: center
+      }
+
+      .ticket-item .match .top .event-block .event-title {
+        font-size: 12px;
+        max-width: calc(100% - 70px)
+      }
+
+      .ticket-item .match .top .blocks .one-block {
+        padding: 10px 6px;
+        width: 50%
+      }
+
+      .ticket-item .match .top .blocks .one-block.stadium {
+        width: 100%;
+        border-bottom: 1px solid #d8d8d8
+      }
+
+      html[dir=ltr] .ticket-item .match .top .blocks .one-block.stadium {
+        border-right: none
+      }
+
+      html[dir=rtl] .ticket-item .match .top .blocks .one-block.stadium {
+        border-left: none
+      }
+
+      html[dir=ltr] #purchase-order-modal .match .top .teams {
+        padding: 8px 60px 8px 8px !important
+      }
+
+      html[dir=rtl] #purchase-order-modal .match .top .teams {
+        padding: 8px 8px 8px 60px !important
+      }
+
+      #purchase-order-modal .match .top .teams .image-holder {
+        width: 40px;
+        height: 40px
+      }
+
+      #purchase-order-modal .match .top .teams .team-names .team-name {
+        font-size: 12px
+      }
+
+      #purchase-order-modal .match .top .blocks .one-block.stadium {
+        text-align: center
+      }
+
+      #purchase-order-modal .match .top .blocks .one-block .info .first,
+      #purchase-order-modal .match .top .blocks .one-block .info>span {
+        font-size: 12px !important
+      }
+
+      #purchase-order-modal .slider-arrows a {
+        top: 14px
+      }
+
+      #purchase-order-modal .total-price {
+        padding: 0
+      }
+
+      #purchase-order-modal .button-green {
+        min-width: 100%;
+        width: 100%
+      }
+    }
+
+    @media (max-width:450px) {
+      .ticket-item .ticket-first-row {
+        padding: 10px
+      }
+
+      html[dir=ltr] .ticket-item .ticket-first-row>div {
+        padding-right: 8px;
+        margin-right: 8px
+      }
+
+      html[dir=rtl] .ticket-item .ticket-first-row>div {
+        padding-left: 8px;
+        margin-left: 8px
+      }
+
+      .ticket-item .ticket-first-row label {
+        font-size: 9px
+      }
+
+      .ticket-item .ticket-first-row span {
+        font-size: 11px
+      }
+
+      .ticket-item .ticket-second-row {
+        padding: 10px
+      }
+
+      .ticket-item:after,
+      .ticket-item:before {
+        top: 46px
+      }
+
+      #purchase-order-modal .purchase-slider {
+        padding: 0 20px
+      }
+
+      #purchase-order-modal .match .top .teams .team-names .vs {
+        display: none
+      }
+
+      #purchase-order-modal .match .top .blocks .one-block {
+        width: 100%
+      }
+
+      #purchase-order-modal .table-holder table tbody tr td {
+        padding: 15px 4px !important
+      }
+    }
+
+    @media (max-width:445px) {
+
+      .ticket-item .match .top .blocks:after,
+      .ticket-item .match .top .blocks:before {
+        display: none
+      }
+
+      html[dir=ltr] .ticket-item .match .top .teams {
+        padding: 8px 40px 8px 8px !important
+      }
+
+      html[dir=rtl] .ticket-item .match .top .teams {
+        padding: 8px 8px 8px 40px !important
+      }
+
+      .ticket-item .match .top .teams .team-name {
+        font-size: 10px !important
+      }
+    }
+
+    @-webkit-keyframes ui-progress-spinner-color {
+
+      0%,
+      100% {
+        stroke: #008744
+      }
+    }
+
+    @keyframes ui-progress-spinner-color {
+
+      0%,
+      100% {
+        stroke: #008744
+      }
+    }
+
+    .slick-disabled {
+      opacity: .5;
+      cursor: not-allowed;
+      pointer-events: none
+    }
+
+    .arrowSlider:hover {
+      color: #219f45
+    }
+  </style>
+  <style>
+    .user-nav {
+      background-color: #fff
+    }
+
+    .user-nav>.container {
+      position: relative
+    }
+
+    .user-nav .user-info {
+      font-size: 0;
+      width: 340px;
+      white-space: nowrap
+    }
+
+    html[dir=ltr] .user-nav .user-info {
+      float: left
+    }
+
+    html[dir=rtl] .user-nav .user-info {
+      float: right
+    }
+
+    .user-nav .user-info .image-holder {
+      display: inline-block;
+      vertical-align: middle;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2px solid #bebebe;
+      position: relative;
+      transform: translateY(25%)
+    }
+
+    html[dir=ltr] .user-nav .user-info .image-holder {
+      margin-right: 10px
+    }
+
+    html[dir=rtl] .user-nav .user-info .image-holder {
+      margin-left: 10px
+    }
+
+    .user-nav .user-info .image-holder>img {
+      display: block;
+      width: 100%;
+      height: auto
+    }
+
+    .user-nav .user-info .info {
+      display: inline-block;
+      vertical-align: middle;
+      width: calc(100% - 110px)
+    }
+
+    .user-nav .user-info .info .welcome {
+      color: #121212;
+      margin: 0;
+      font-size: 13px;
+      font-weight: 700
+    }
+
+    html[dir=ltr] .user-nav .user-info .info .welcome {
+      text-align: left
+    }
+
+    html[dir=rtl] .user-nav .user-info .info .welcome {
+      text-align: right
+    }
+
+    .user-nav .user-info .info .name {
+      font-weight: 700;
+      font-size: 18px;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      margin-bottom: 0;
+      direction: initial
+    }
+
+    html[dir=ltr] .user-nav .user-info .info .name {
+      text-align: left
+    }
+
+    html[dir=rtl] .user-nav .user-info .info .name {
+      text-align: right
+    }
+
+    .user-nav .user-info .info .fan-id {
+      font-family: EncodeSansExpanded-Regular, arial, tahoma;
+      font-size: 14px
+    }
+
+    html[dir=ltr] .user-nav .user-info .info .fan-id {
+      text-align: left
+    }
+
+    html[dir=rtl] .user-nav .user-info .info .fan-id {
+      text-align: right
+    }
+
+    .user-nav .user-info .info .fan-id>span {
+      display: inline-block
+    }
+
+    html[dir=ltr] .user-nav .user-info .info .fan-id>span {
+      margin-right: 10px
+    }
+
+    html[dir=rtl] .user-nav .user-info .info .fan-id>span {
+      margin-left: 10px
+    }
+
+    .user-nav .user-info .info .fan-id .id-num {
+      letter-spacing: 1px
+    }
+
+    .user-nav .user-links {
+      margin-top: 39px;
+      width: calc(100% - 430px);
+      font-size: 0;
+      white-space: nowrap;
+      min-width: 318px
+    }
+
+    html[dir=ltr] .user-nav .user-links {
+      float: right;
+      text-align: right
+    }
+
+    html[dir=rtl] .user-nav .user-links {
+      float: left;
+      text-align: left
+    }
+
+    .user-nav .user-links>li {
+      display: inline-block
+    }
+
+    html[dir=ltr] .user-nav .user-links>li:not(:first-child) {
+      margin-left: 3%
+    }
+
+    html[dir=rtl] .user-nav .user-links>li:not(:first-child) {
+      margin-right: 3%
+    }
+
+    .user-nav .user-links>li>a {
+      display: block;
+      color: #7e7e7e;
+      transition: all .1s ease-in-out;
+      font-family: EncodeSansExpanded-Regular, arial, tahoma;
+      font-size: 0
+    }
+
+    .user-nav .user-links>li>a.active,
+    .user-nav .user-links>li>a:hover {
+      color: #000
+    }
+
+    .user-nav .user-links>li>a>i {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 18px
+    }
+
+    html[dir=ltr] .user-nav .user-links>li>a>i {
+      margin-right: 7px
+    }
+
+    html[dir=rtl] .user-nav .user-links>li>a>i {
+      margin-left: 7px
+    }
+
+    .user-nav .user-links>li>a>span {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 14px
+    }
+
+    .user-nav .user-cart {
+      display: block;
+      width: 45px;
+      height: 45px;
+      line-height: 50px;
+      text-align: center;
+      background-color: #f2f2f2;
+      border: 1px solid #c2c2c2;
+      position: relative;
+      margin-top: 27px
+    }
+
+    html[dir=ltr] .user-nav .user-cart {
+      float: right;
+      margin-left: 20px
+    }
+
+    html[dir=rtl] .user-nav .user-cart {
+      float: left;
+      margin-right: 20px
+    }
+
+    .user-nav .user-cart>i {
+      display: inline-block;
+      font-size: 20px;
+      color: #c2c2c2
+    }
+
+    .user-nav .user-cart .num {
+      position: absolute;
+      width: 27px;
+      height: 27px;
+      line-height: 23px;
+      border-radius: 50%;
+      top: -14px;
+      border: 2px solid #fff;
+      background-color: #ff4d4d;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      padding-left: 1px;
+      transform: scale(0);
+      transition: all .3s ease-in-out
+    }
+
+    html[dir=ltr] .user-nav .user-cart .num {
+      right: -14px
+    }
+
+    html[dir=rtl] .user-nav .user-cart .num {
+      left: -14px
+    }
+
+    .user-nav .user-cart.active {
+      border-color: #219f45;
+      cursor: pointer
+    }
+
+    .user-nav .user-cart.active>i {
+      color: #219f45
+    }
+
+    .user-nav .user-cart.active .num {
+      transform: scale(1)
+    }
+
+    .user-nav .user-nav-bottom {
+      padding: 10px 0;
+      background-color: #e9e9e9;
+      color: #666;
+      font-size: 13px
+    }
+
+    html[dir=ltr] .user-nav .user-nav-bottom {
+      text-align: left
+    }
+
+    html[dir=rtl] .user-nav .user-nav-bottom {
+      text-align: right
+    }
+
+    html[dir=ltr] .user-nav .user-nav-bottom>.container {
+      padding-left: 125px
+    }
+
+    html[dir=rtl] .user-nav .user-nav-bottom>.container {
+      padding-right: 125px
+    }
+
+    @media (max-width:991px) {
+      .user-nav .user-info {
+        width: calc(100% - 65px)
+      }
+
+      .user-nav .user-info .image-holder {
+        width: 75px;
+        height: 75px
+      }
+
+      .user-nav .user-info .info .welcome {
+        font-size: 11px
+      }
+
+      .user-nav .user-info .info .name {
+        font-size: 15px;
+        margin: 0
+      }
+
+      .user-nav .user-info .info .fan-id {
+        font-size: 12px
+      }
+
+      .user-nav .user-links {
+        position: fixed;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: none;
+        width: 100%;
+        background-color: #fff;
+        z-index: 77777777;
+        padding: 12px 0 10px;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, .2)
+      }
+
+      .user-nav .user-links>li {
+        width: 20%;
+        margin: 0 !important
+      }
+
+      .user-nav .user-links>li>a {
+        text-align: center
+      }
+
+      .user-nav .user-links>li>a>i {
+        display: block;
+        font-size: 25px;
+        margin: 0 0 5px
+      }
+
+      .user-nav .user-cart {
+        margin-top: 17px
+      }
+
+      html[dir=ltr] .user-nav .user-nav-bottom>.container {
+        padding-left: 100px
+      }
+
+      html[dir=rtl] .user-nav .user-nav-bottom>.container {
+        padding-right: 100px
+      }
+    }
+
+    @media (max-width:575px) {
+      .user-nav .user-links>li>a>span {
+        font-size: 11px
+      }
+
+      .user-nav .user-info {
+        width: calc(100% - 55px)
+      }
+
+      .user-nav .user-info .info {
+        width: calc(100% - 65px)
+      }
+
+      .user-nav .user-nav-bottom {
+        font-size: 12px
+      }
+
+      .user-nav .user-cart {
+        width: 35px;
+        height: 35px;
+        line-height: 38px;
+        margin-top: 22px
+      }
+
+      .user-nav .user-cart>i {
+        font-size: 18px
+      }
+
+      .user-nav .user-cart .num {
+        width: 25px;
+        height: 25px;
+        line-height: 22px;
+        font-size: 10px;
+        padding: 0
+      }
+    }
+
+    @media (max-width:400px) {
+      .user-nav .user-info {
+        padding: 5px 0 0
+      }
+
+      .user-nav .user-info .image-holder {
+        width: 60px;
+        height: 60px
+      }
+
+      html[dir=ltr] .user-nav .user-info .image-holder {
+        margin-right: 5px
+      }
+
+      html[dir=rtl] .user-nav .user-info .image-holder {
+        margin-left: 5px
+      }
+
+      .user-nav .user-info .info .name {
+        font-size: 13px
+      }
+
+      .user-nav .user-info .info .fan-id {
+        font-size: 11px
+      }
+
+      html[dir=ltr] .user-nav .user-info .info .fan-id>span {
+        margin-right: 5px
+      }
+
+      html[dir=rtl] .user-nav .user-info .info .fan-id>span {
+        margin-left: 5px
+      }
+    }
+
+    .news-holder {
+      height: 50px;
+      padding: 0 20px;
+      background-color: transparent;
+      position: relative;
+      overflow: hidden
+    }
+
+    .news {
+      white-space: nowrap;
+      top: 5px;
+      right: 100%;
+      width: 100%;
+      height: 40px;
+      line-height: 40px
+    }
+
+    .marquee {
+      margin: 0 auto;
+      overflow: hidden;
+      white-space: nowrap;
+      box-sizing: border-box;
+      -webkit-animation: 90s linear infinite marquee;
+      animation: 90s linear infinite marquee
+    }
+
+    .marquee:hover {
+      -webkit-animation-play-state: paused;
+      animation-play-state: paused
+    }
+
+    @-webkit-keyframes marquee {
+      0% {
+        text-indent: 100%
+      }
+
+      100% {
+        text-indent: -480em
+      }
+    }
+
+    @keyframes marquee {
+      0% {
+        text-indent: 100%
+      }
+
+      100% {
+        text-indent: -480em
+      }
+    }
+
+    .vaccin-info {
+      display: flex;
+      align-items: center
+    }
+
+    .vaccin-info .status {
+      display: flex;
+      align-items: center;
+      -webkit-margin-end: 20px;
+      margin-inline-end: 20px
+    }
+
+    .vaccin-info .status svg {
+      -webkit-margin-end: 5px;
+      margin-inline-end: 5px
+    }
+
+    .vaccin-info .status.success svg .b {
+      fill: #219f45
+    }
+
+    .vaccin-info .status.success span {
+      color: #219f45
+    }
+
+    .vaccin-info .status.subscribe svg .b {
+      fill: #2965be
+    }
+
+    .vaccin-info .status.subscribe span {
+      color: #2965be
+    }
+
+    .vaccin-info .status.failed svg .b {
+      fill: #c23636
+    }
+
+    .vaccin-info .status.failed span {
+      color: #c23636
+    }
+  </style>
+  <style>
+    .footer {
+      background-color: #363636;
+      padding: 30px 0 22px;
+      z-index: 777;
+      position: relative
+    }
+
+    .footer>.container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center
+    }
+
+    .footer .links {
+      position: relative;
+      z-index: 3
+    }
+
+    html[dir=ltr] .footer .links {
+      text-align: left
+    }
+
+    html[dir=rtl] .footer .links {
+      text-align: right
+    }
+
+    .footer .links>li {
+      display: inline-block;
+      vertical-align: middle
+    }
+
+    html[dir=ltr] .footer .links>li {
+      margin-right: 18px
+    }
+
+    html[dir=rtl] .footer .links>li {
+      margin-left: 18px
+    }
+
+    .footer .links>li:first-child {
+      height: 30px
+    }
+
+    .footer .links>li>a {
+      display: block;
+      color: #fff;
+      font-family: EncodeSansExpanded-Regular, arial, tahoma;
+      font-size: 13px;
+      height: 100%
+    }
+
+    .footer .links>li>a:hover {
+      opacity: .5;
+      transition: all .1s ease-in-out
+    }
+
+    .footer .links>li>a>img {
+      display: block;
+      height: 100%;
+      width: auto
+    }
+
+    .footer .copy-rights {
+      font-size: 11px;
+      color: #bebebe;
+      font-family: EncodeSansExpanded-Regular, arial, tahoma
+    }
+
+    html[dir=ltr] .footer .copy-rights {
+      direction: ltr
+    }
+
+    html[dir=rtl] .footer .copy-rights {
+      direction: rtl
+    }
+
+    @media (max-width:991px) {
+      .logged-in {
+        margin-bottom: 72px
+      }
+
+      .footer>.container {
+        display: block
+      }
+
+      .footer .links {
+        text-align: center;
+        margin-bottom: 15px
+      }
+
+      .footer .copy-rights {
+        text-align: center
+      }
+    }
+
+    @media (max-width:769px) {
+      .footer .links {
+        text-align: center
+      }
+
+      .footer .links>li {
+        margin: 0 5px
+      }
+    }
+
+    @media (max-width:575px) {
+      .footer.logged-in {
+        margin-bottom: 67px
+      }
+
+      .footer .links>li:first-child {
+        display: none
+      }
+    }
+  </style>
+  <script charset="utf-8" src="./Tazkarti_files/7.a919efc681af487c65f7.js.download"></script>
+  <script charset="utf-8" src="./Tazkarti_files/6.34c2660ea3fb3c86f791.js.download"></script>
+  <style>
+    .ngx-pagination {
+      margin-left: 0;
+      margin-bottom: 1rem;
+    }
+
+    .ngx-pagination::before,
+    .ngx-pagination::after {
+      content: ' ';
+      display: table;
+    }
+
+    .ngx-pagination::after {
+      clear: both;
+    }
+
+    .ngx-pagination li {
+      -moz-user-select0: none;
+      -webkit-user-select0: none;
+      -ms-user-select0: none;
+      margin-right: 0.0625rem;
+      border-radius: 0;
+    }
+
+    .ngx-pagination li {
+      display: inline-block;
+    }
+
+    .ngx-pagination a,
+    .ngx-pagination button {
+      color: #0a0a0a;
+      display: block;
+      padding: 0.1875rem 0.625rem;
+      border-radius: 0;
+    }
+
+    .ngx-pagination a:hover,
+    .ngx-pagination button:hover {
+      background: #e6e6e6;
+    }
+
+    .ngx-pagination .current {
+      padding: 0.1875rem 0.625rem;
+      background: #2199e8;
+      color: #fefefe;
+      cursor: default;
+    }
+
+    .ngx-pagination .disabled {
+      padding: 0.1875rem 0.625rem;
+      color: #cacaca;
+      cursor: default;
+    }
+
+    .ngx-pagination .disabled:hover {
+      background: transparent;
+    }
+
+    .ngx-pagination a,
+    .ngx-pagination button {
+      cursor: pointer;
+    }
+
+    .ngx-pagination .pagination-previous a::before,
+    .ngx-pagination .pagination-previous.disabled::before {
+      content: '«';
+      display: inline-block;
+      margin-right: 0.5rem;
+    }
+
+    .ngx-pagination .pagination-next a::after,
+    .ngx-pagination .pagination-next.disabled::after {
+      content: '»';
+      display: inline-block;
+      margin-left: 0.5rem;
+    }
+
+    .ngx-pagination .show-for-sr {
+      position: absolute !important;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+    }
+
+    .ngx-pagination .small-screen {
+      display: none;
+    }
+
+    @media screen and (max-width: 601px) {
+      .ngx-pagination.responsive .small-screen {
+        display: inline-block;
+      }
+
+      .ngx-pagination.responsive li:not(.small-screen):not(.pagination-previous):not(.pagination-next) {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Google Analytics here -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-138651281-1', 'auto');
+  </script>
+  <!-- End Google Analytics -->
+
+  <!--<link rel="stylesheet" id="lang" href="assets/styles/styles.css">-->
+  <app-root ng-version="7.2.16"><router-outlet></router-outlet><app-user-tickets class="ng-star-inserted"><app-header>
+        <div class="side-nav">
+          <div class="bars"><span></span><span></span><span></span></div>
+          <ul class="links">
+            <li><a href="javascript:void(0)">Home</a></li>
+            <li><a href="javascript:void(0)">Stadium Locations</a></li>
+            <li><a href="javascript:void(0)">Our Stores</a></li>
+            <li><a href="javascript:void(0)">FAQ</a></li>
+            <li><a href="javascript:void(0)">About Tazkarti</a></li>
+            <li><a href="javascript:void(0)">Contact Us</a></li>
+          </ul>
+          <ul class="social">
+            <li><a href="https://facebook.com/tazkarti/" target="_blank"><i class="icomoon-facebook"></i></a></li>
+            <li><a href="https://twitter.com/tazkarti" target="_blank"><i class="icomoon-twitter"></i></a></li>
+            <li><a href="https://instagram.com/tazkarti/" target="_blank"><i class="icomoon-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div class="header">
+          <div class="container clearfix">
+            <ul class="logos">
+              <li class="bars"><span></span><span></span><span></span></li>
+              <li class="tazkarti"><a href="javascript:void(0)"><img alt=""
+                    src=".//assets/Tazkarti_files/logo1.svg"></a></li>
+            </ul>
+            <ul class="links"><!----><!----><!---->
+              <li class="ng-star-inserted"><a href="https://www.tazkarti.com/#/profile/myinfo"><i
+                    class="icomoon-user-info"></i><span>My Profile</span></a></li><!---->
+              <li class="ng-star-inserted"><a href="javascript:void(0)"><i class="icomoon-logout"></i><span>Sign
+                    out</span></a></li><!---->
+              <li class="drop-down-holder"><a class="prevent-default" href="javascript:void(0)"><i
+                    class="icomoon-world"></i><span>English</span><i class="icomoon-chevron-down"></i></a>
+                <ul class="drop-down">
+                  <li><a href="javascript:void(0)"><img src=".//assets/Tazkarti_files/lang-flag3.svg"> العربية </a></li>
+                  <li><a href="javascript:void(0)"><img src=".//assets/Tazkarti_files/lang-flag1.svg"> English </a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div><!----><p-confirmdialog class="ng-tns-c6-2"><!----></p-confirmdialog>
+      </app-header><app-navbar-user>
+        <div class="user-nav"><!---->
+          <div class="container clearfix ng-star-inserted">
+            <div class="user-info">
+              <div class="image-holder"><!----><img alt=""
+                  src="data:image/png;base64, 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"
+                  class="ng-star-inserted"><!----></div>
+              <div class="info">
+                <div class="welcome">Welcome</div>
+                <div class="name">احمد حنفى </div>
+                <div class="fan-id"><span class="text-grey-light">Tazkarti ID</span><span
+                    class="id-num">10001762840098</span></div>
+                <div class="fan-id vaccin-info"><!----></div>
+              </div>
+            </div><!---->
+            <ul class="user-links">
+              <li><a href="https://www.tazkarti.com/#/profile"><i class="icomoon-user-home"></i><span>Home</span></a>
+              </li>
+              <li><a href="https://www.tazkarti.com/#/matches"><i class="icomoon-user-mathes"><span
+                      class="path6"></span></i><span>Matches</span></a></li>
+              <li><a href="https://www.tazkarti.com/#/events"><i class="icomoon-event"><span
+                      class="path6"></span></i><span>Events</span></a></li>
+              <li><a href="https://www.tazkarti.com/#/profile/user-tickets" class="active"><i
+                    class="icomoon-user-purchase-history"></i><span>My Tickets</span></a></li>
+              <li><a href="https://www.tazkarti.com/#/profile/dependants"><i
+                    class="icomoon-user-dependents"></i><span>Dependents</span></a></li>
+            </ul>
+          </div>
+          <div class="user-nav-bottom p-0">
+            <div class="container"><!----><!---->
+              <div class="news-holder ng-star-inserted" dir="ltr">
+                <div class="news pt-2">
+                  <div class="marquee">Tazkarti ID is your pass to stadiums. It is an effective method to achieve the
+                    safety of fans Allowing identifying them in the stadium.
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Tazkarti is also a ticketing provider and event organizer that plans and hosts its own events all
+                    around Egypt.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </app-navbar-user>
+      <div class="container d-none">
+        <ol class="breadcrumb"><!---->
+          <li class="breadcrumb-item ng-star-inserted"><a href="https://www.tazkarti.com/#/profile">Home</a></li><!---->
+          <li aria-current="page" class="breadcrumb-item active ng-star-inserted">My Tickets</li>
+        </ol>
+      </div>
+      <div class="content matches">
+        <div class="container">
+          <div class="events-tickets">
+            <div class="page-title-holder filter">
+              <div class="page-title">Entertainment Tickets</div><button
+                class="button button-blue width-auto size-2 filter-toggle" type="button"><i
+                  class="icomoon-filter"></i><span>Search</span></button>
+              <div class="filter-form"><i class="icomoon-cross filter-toggle"></i>
+                <form novalidate="" class="ng-untouched ng-pristine ng-valid">
+                  <div class="input-holder"><label class="main-label">Event Type</label><select
+                      class="main-input icon-input ng-untouched ng-pristine ng-valid" name="showType" tabindex="1">
+                      <option selected="" value="0: undefined"> All </option>
+                      <option value="concerts"> Concert </option>
+                      <option value="theaters"> Theater </option>
+                      <option value="family"> Family </option>
+                    </select><i class="icomoon-chevron-down"></i></div>
+                  <div class="input-holder datepicker-wrapper"><label class="main-label">Date</label><select
+                      class="main-input icon-input ng-untouched ng-pristine ng-valid" name="showDate" tabindex="1">
+                      <option selected="" value="0: undefined"> All </option><!---->
+                    </select></div>
+                  <div class="buttons"><button class="clear-filter" type="button"> Clear Search </button><button
+                      class="button button-blue width-auto filter-toggle" type="button"> Search </button></div>
+                </form>
+              </div>
+            </div><!----><!----><!---->
+            <div class="text-center ng-star-inserted">
+              <div class="table-empty"><img alt="" src=".//assets/Tazkarti_files/nodata.svg"><span>No data to
+                  display.</span>
+              </div>
+            </div><!---->
+          </div>
+          <div class="sports-tickets">
+            <div class="page-title-holder filter">
+              <div class="page-title">Sports Tickets</div><button
+                class="button button-blue width-auto size-2 filter-toggle" type="button"><i
+                  class="icomoon-filter"></i><span>Search</span></button>
+              <div class="filter-form"><i class="icomoon-cross filter-toggle"></i>
+                <form novalidate="" class="ng-untouched ng-pristine ng-valid">
+                  <div class="input-holder"><label class="main-label">Match</label><!----><select
+                      class="main-input icon-input ng-untouched ng-pristine ng-valid ng-star-inserted" name="teamId"
+                      tabindex="1">
+                      <option selected="" value="0: undefined"> All </option><!---->
+                      <option value="910" class="ng-star-inserted"> 1. Al Ahly vs Coton Sport Garoua </option>
+                      <option value="904" class="ng-star-inserted"> 2. Al Ahly vs Arab Contractors Sporting Club
+                      </option>
+                      <option value="926" class="ng-star-inserted"> 3. Al Ahly vs Al-Hilal Omdurman </option>
+                      <option value="1006" class="ng-star-inserted"> 4. Al Ahly vs Raja Casablanca </option>
+                    </select><i class="icomoon-chevron-down"></i></div>
+                  <div class="input-holder"><label class="main-label">Stadium</label><select
+                      class="main-input icon-input ng-untouched ng-pristine ng-valid" name="stadiumId" tabindex="2">
+                      <option selected="" value="0: undefined"> All </option><!---->
+                      <option value="1" class="ng-star-inserted"> Cairo Int. Stadium </option>
+                      <option value="2" class="ng-star-inserted"> 30 June Stadium </option>
+                      <option value="3" class="ng-star-inserted"> Al Salam Stadium </option>
+                      <option value="4" class="ng-star-inserted"> Alexandria Stadium </option>
+                      <option value="5" class="ng-star-inserted"> Suez Stadium </option>
+                      <option value="6" class="ng-star-inserted"> Ismailia Stadium </option>
+                      <option value="7" class="ng-star-inserted"> Cairo Int. Stadium </option>
+                      <option value="8" class="ng-star-inserted"> NEW CAPITAL SPORTS HALL </option>
+                      <option value="9" class="ng-star-inserted"> HASSAN MOSTAFA SPORTS HALL (6th of October City)
+                      </option>
+                      <option value="10" class="ng-star-inserted"> CAIRO STADIUM SPORTS HALL </option>
+                      <option value="11" class="ng-star-inserted"> BORG AL ARAB SPORTS &nbsp;HALL </option>
+                      <option value="12" class="ng-star-inserted"> Gehaz El Reyada Stadium </option>
+                      <option value="13" class="ng-star-inserted"> Ghazl El Mahala Stadium </option>
+                      <option value="14" class="ng-star-inserted"> Borg El Arab Stadium </option>
+                      <option value="15" class="ng-star-inserted"> Arab Contractors Stadium </option>
+                      <option value="16" class="ng-star-inserted"> Khaled Bichara Stadium </option>
+                      <option value="17" class="ng-star-inserted"> Petrosport Stadium </option>
+                      <option value="18" class="ng-star-inserted"> El Koleya El Harbeya </option>
+                      <option value="20" class="ng-star-inserted"> HASSAN MOSTAFA SPORTS HALL </option>
+                      <option value="21" class="ng-star-inserted"> Cairo stadium </option>
+                      <option value="22" class="ng-star-inserted"> International Hall (6 October) </option>
+                      <option value="23" class="ng-star-inserted"> Suez Canal Stadium </option>
+                      <option value="25" class="ng-star-inserted"> Aswan Stadium </option>
+                      <option value="26" class="ng-star-inserted"> Haras El Hedoud Stadium </option>
+                      <option value="29" class="ng-star-inserted"> TBA </option>
+                      <option value="32" class="ng-star-inserted"> Hockey stadium-Canal </option>
+                      <option value="34" class="ng-star-inserted"> Sports hall-Suez Canal stadium </option>
+                    </select><i class="icomoon-chevron-down"></i></div>
+                  <div class="buttons" tabindex="5"><button class="clear-filter" type="button"> Clear Search
+                    </button><button class="button button-blue width-auto filter-toggle" type="button"> Search </button>
+                  </div>
+                </form>
+              </div>
+            </div><!---->
+            <div class="ng-star-inserted">
+              <div class="ticket-item">
+                <div class="ticket-first-row">
+                  <div class="d-none d-md-block"><label>Name</label><span class="text-green">احمد محمد حنفى </span>
+                  </div>
+                  <div><label>Ticket No.</label><span class="text-green">1033007206529625</span></div>
+                  <div class="d-none d-lg-block"><label>Tazkarti ID</label><span>10001762840098</span></div>
+                  <div class="d-none d-lg-block"><label>Status</label><span class="text-success">Delivered</span></div>
+                  <button class="button button-cancel" disabled="">Cancel</button>
+                </div>
+                <div class="ticket-second-row">
+                  <div class="match">
+                    <div class="top clearfix">
+                      <div class="teams">
+                        <div class="image-holder first">
+                          <div class="flag-icon"
+                            style="background-image: url(&quot;assets/imagesref/fe5db71b-c3fd-4f9f-a7e2-5e61fa9da069.png&quot;);">
+                          </div>
+                        </div>
+                        <div class="image-holder second">
+                          <div class="flag-icon"
+                            style="background-image: url(&quot;assets/imagesref/6177d862-649d-4f26-9dbb-de3ccdecaf79.png&quot;);">
+                          </div>
+                        </div>
+                        <div class="team-names">
+                          <div class="team-name first"> Al Ahly </div>
+                          <div class="vs">vs</div>
+                          <div class="team-name second"> Raja Casablanca </div>
+                        </div>
+                      </div>
+                      <div class="blocks clearfix">
+                        <div class="one-block stadium">
+                          <div class="image-holder"><img alt="" src=".//assets/Tazkarti_files/stadium.svg"></div>
+                          <div class="info"><span> Cairo Int. Stadium, <span> Cairo </span></span></div>
+                        </div>
+                        <div class="one-block when">
+                          <div class="image-holder"><img alt="" src=".//assets/Tazkarti_files/calendar.svg"></div>
+                          <div class="info">
+                            <div class="first"> Sat 22 Apr 2023</div>
+                            <div class="second"> Time : 09 : 00 PM </div>
+                          </div>
+                        </div>
+                        <div class="one-block when">
+                          <div class="image-holder"><img alt="" src="./Tazkarti_files/class-category.svg"></div>
+                          <div class="info">
+                            <div class="first"> CAT3 - Left</div>
+                            <div class="second"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div><!---->
+            <div class="float-right ng-star-inserted"><pagination-controls id="pagMatchTickets" nextlabel=""
+                previouslabel=""><pagination-template><!---->
+                  <ul class="ngx-pagination ng-star-inserted" role="navigation" aria-label="Pagination"><!---->
+                    <li class="pagination-previous ng-star-inserted"><!----><a tabindex="0" aria-label=" page"
+                        class="ng-star-inserted"> <span class="show-for-sr">page</span></a><!----></li>
+                    <li class="small-screen"> 2 / 2 </li><!---->
+                    <li class="ng-star-inserted"><!----><a tabindex="0" class="ng-star-inserted"><span
+                          class="show-for-sr">page </span><span>1</span></a><!----></li>
+                    <li class="current ng-star-inserted"><!----><!----><!----><span
+                        class="show-for-sr ng-star-inserted">You're on page </span><span
+                        class="ng-star-inserted">2</span></li><!---->
+                    <li class="pagination-next ng-star-inserted disabled"><!----><!----><span class="ng-star-inserted">
+                        <span class="show-for-sr">page</span></span></li>
+                  </ul>
+                </pagination-template></pagination-controls></div><!----><!---->
+          </div>
+          <div class="page-title text-left">Payment History</div>
+          <div class="table-holder"><!---->
+            <table class="ng-star-inserted">
+              <thead>
+                <tr>
+                  <th class="text-left">Booking No.</th>
+                  <th class="table-col-3">Purchase Date</th>
+                  <th class="table-col-4">Payment Method</th>
+                  <th class="">Total Amount</th>
+                  <th class="table-col-5">Shipment Number</th>
+                  <th class="table-col-action table-col-1">Actions</th>
+                </tr>
+              </thead><!---->
+              <tbody class="ng-star-inserted">
+                <tr>
+                  <td class="text-left no-wrap"><span class="collapse-table-toggle"><i class="icomoon-plus"></i></span>
+                    9243481662 </td>
+                  <td class="table-col-3">17-04-2023</td>
+                  <td class="table-col-4"> Fawry </td>
+                  <td class="">60 L.E.</td>
+                  <td class="table-col-5"></td>
+                  <td class="table-col-action table-col-1"><a class="table-action" href="javascript:void(0)"> View
+                      Details </a></td>
+                </tr>
+                <tr class="collapse-data">
+                  <td colspan="6">
+                    <table class="collapse-table">
+                      <tbody>
+                        <tr class="collapse-col-3">
+                          <th>Purchase Date</th>
+                          <td>17-04-2023</td>
+                        </tr>
+                        <tr class="collapse-col-4">
+                          <th>Payment Method</th>
+                          <td> Fawry </td>
+                        </tr>
+                        <tr class="collapse-col-5">
+                          <th>Shipment Number</th>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+              <tbody class="ng-star-inserted">
+                <tr>
+                  <td class="text-left no-wrap"><span class="collapse-table-toggle"><i class="icomoon-plus"></i></span>
+                    9239335699 </td>
+                  <td class="table-col-3">26-03-2023</td>
+                  <td class="table-col-4"> Visa </td>
+                  <td class="">50 L.E.</td>
+                  <td class="table-col-5"></td>
+                  <td class="table-col-action table-col-1"><a class="table-action" href="javascript:void(0)"> View
+                      Details </a></td>
+                </tr>
+                <tr class="collapse-data">
+                  <td colspan="6">
+                    <table class="collapse-table">
+                      <tbody>
+                        <tr class="collapse-col-3">
+                          <th>Purchase Date</th>
+                          <td>26-03-2023</td>
+                        </tr>
+                        <tr class="collapse-col-4">
+                          <th>Payment Method</th>
+                          <td> Visa </td>
+                        </tr>
+                        <tr class="collapse-col-5">
+                          <th>Shipment Number</th>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+              <tbody class="ng-star-inserted">
+                <tr>
+                  <td class="text-left no-wrap"><span class="collapse-table-toggle"><i class="icomoon-plus"></i></span>
+                    9234857763 </td>
+                  <td class="table-col-3">06-03-2023</td>
+                  <td class="table-col-4"> Visa </td>
+                  <td class="">75 L.E.</td>
+                  <td class="table-col-5"></td>
+                  <td class="table-col-action table-col-1"><a class="table-action" href="javascript:void(0)"> View
+                      Details </a></td>
+                </tr>
+                <tr class="collapse-data">
+                  <td colspan="6">
+                    <table class="collapse-table">
+                      <tbody>
+                        <tr class="collapse-col-3">
+                          <th>Purchase Date</th>
+                          <td>06-03-2023</td>
+                        </tr>
+                        <tr class="collapse-col-4">
+                          <th>Payment Method</th>
+                          <td> Visa </td>
+                        </tr>
+                        <tr class="collapse-col-5">
+                          <th>Shipment Number</th>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+              <tbody class="ng-star-inserted">
+                <tr>
+                  <td class="text-left no-wrap"><span class="collapse-table-toggle"><i class="icomoon-plus"></i></span>
+                    9233481776 </td>
+                  <td class="table-col-3">01-03-2023</td>
+                  <td class="table-col-4"> Fawry </td>
+                  <td class="">100 L.E.</td>
+                  <td class="table-col-5"></td>
+                  <td class="table-col-action table-col-1"><a class="table-action" href="javascript:void(0)"> View
+                      Details </a></td>
+                </tr>
+                <tr class="collapse-data">
+                  <td colspan="6">
+                    <table class="collapse-table">
+                      <tbody>
+                        <tr class="collapse-col-3">
+                          <th>Purchase Date</th>
+                          <td>01-03-2023</td>
+                        </tr>
+                        <tr class="collapse-col-4">
+                          <th>Payment Method</th>
+                          <td> Fawry </td>
+                        </tr>
+                        <tr class="collapse-col-5">
+                          <th>Shipment Number</th>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+              <tbody class="ng-star-inserted">
+                <tr>
+                  <td class="text-left no-wrap"><span class="collapse-table-toggle"><i class="icomoon-plus"></i></span>
+                    9233481776 </td>
+                  <td class="table-col-3">01-03-2023</td>
+                  <td class="table-col-4"> Visa </td>
+                  <td class="">175 L.E.</td>
+                  <td class="table-col-5"></td>
+                  <td class="table-col-action table-col-1"><a class="table-action" href="javascript:void(0)"> View
+                      Details </a></td>
+                </tr>
+                <tr class="collapse-data">
+                  <td colspan="6">
+                    <table class="collapse-table">
+                      <tbody>
+                        <tr class="collapse-col-3">
+                          <th>Purchase Date</th>
+                          <td>01-03-2023</td>
+                        </tr>
+                        <tr class="collapse-col-4">
+                          <th>Payment Method</th>
+                          <td> Visa </td>
+                        </tr>
+                        <tr class="collapse-col-5">
+                          <th>Shipment Number</th>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+              </tbody>
+            </table><!----><!---->
+          </div>
+        </div>
+      </div>
+      <div aria-hidden="false" aria-labelledby="" class="modal fade transfer-tickets-modal app-modal"
+        id="transfer-ticket-modal" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body matches">
+              <div class="modal-title"><i class="icomoon-arrows"></i><span>Transfer Ticket</span></div>
+              <div class="ticket-item">
+                <div class="ticket-first-row">
+                  <div class="ticket-details">
+                    <div><label>Ticket No.</label><span class="text-green"></span></div>
+                    <div><label>Tazkarti ID</label><span></span></div>
+                    <div><label>Status</label><span></span></div>
+                  </div>
+                </div>
+                <div class="ticket-second-row">
+                  <div class="match">
+                    <div class="top clearfix">
+                      <div class="teams">
+                        <div class="image-holder first">
+                          <div class="flag-icon flag-icon-null"></div>
+                        </div>
+                        <div class="image-holder second">
+                          <div class="flag-icon flag-icon-null"></div>
+                        </div>
+                        <div class="team-names">
+                          <div class="team-name first"> </div>
+                          <div class="vs">vs</div>
+                          <div class="team-name second"></div>
+                        </div>
+                      </div>
+                      <div class="blocks">
+                        <div class="one-block stadium">
+                          <div class="image-holder"><img alt="" src="./Tazkarti_files/stadium.svg"></div>
+                          <div class="info"><span> , <span> </span></span></div>
+                        </div>
+                        <div class="one-block when">
+                          <div class="image-holder"><img alt="" src=".//assets/Tazkarti_files/calendar.svg"></div>
+                          <div class="info">
+                            <div class="first">Invalid date</div>
+                            <div class="second"> Time : Invalid date </div>
+                          </div>
+                        </div>
+                        <div class="one-block when">
+                          <div class="image-holder"><img alt="" src="./Tazkarti_files/class-category.svg"></div>
+                          <div class="info">
+                            <div class="first"> </div>
+                            <div class="second"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="transfer-details">
+                <p>Transferring tickets is irreversible! Make sure you enter the correct Tazkarti ID.</p>
+                <div class="transfer-number"><i class="icomoon-user-info"></i><input
+                    class="form-control ng-untouched ng-pristine ng-valid" max="99999999999999" name="fanID"
+                    onkeypress="if(this.value.length==14) return false;" type="number"></div><!----><!---->
+              </div>
+            </div>
+            <div class="book-ticket-modal-footer clearfix"><button aria-label="Close" class="button float-left"
+                data-dismiss="modal" type="button"><i class="icomoon-arrow-left2"></i> Back </button><button
+                class="button button-green float-right" data-dismiss="modal" id="ticket-transfer" disabled=""> Transfer
+              </button></div>
+          </div>
+        </div>
+      </div>
+      <div aria-hidden="true" aria-labelledby="" class="modal fade transfer-tickets-modal success"
+        id="transfer-ticket-success-modal" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body matches">
+              <div class="modal-title"><i><img alt="" src="./Tazkarti_files/group-1311.svg"></i><span>Ticket
+                  Transferred</span>
+                <h6>Ticket has been successfully transferred.</h6>
+              </div>
+              <div class="ticket-item">
+                <div class="ticket-first-row">
+                  <div class="ticket-details">
+                    <div><label>Ticket No.</label><span class="text-green"></span></div>
+                    <div><label>Tazkarti ID</label><span></span></div>
+                    <div><label>Status</label><span></span></div>
+                  </div>
+                </div>
+                <div class="ticket-second-row">
+                  <div class="match">
+                    <div class="top clearfix">
+                      <div class="teams">
+                        <div class="image-holder first">
+                          <div class="flag-icon flag-icon-null"></div>
+                        </div>
+                        <div class="image-holder second">
+                          <div class="flag-icon flag-icon-null"></div>
+                        </div>
+                        <div class="team-names">
+                          <div class="team-name first"> </div>
+                          <div class="vs">vs</div>
+                          <div class="team-name second"> </div>
+                        </div>
+                      </div>
+                      <div class="blocks">
+                        <div class="one-block stadium">
+                          <div class="image-holder"><img alt="" src="./Tazkarti_files/stadium.svg"></div>
+                          <div class="info"><span> , <span> </span></span></div>
+                        </div>
+                        <div class="one-block when">
+                          <div class="image-holder"><img alt="" src=".//assets/Tazkarti_files/calendar.svg"></div>
+                          <div class="info">
+                            <div class="first">Invalid date</div>
+                            <div class="second"> Time : Invalid date </div>
+                          </div>
+                        </div>
+                        <div class="one-block when">
+                          <div class="image-holder"><img alt="" src="./Tazkarti_files/class-category.svg"></div>
+                          <div class="info">
+                            <div class="first"> </div>
+                            <div class="second"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="book-ticket-modal-footer clearfix"><button class="button button-green d-none" type="button">
+                Back </button><button aria-label="Close" class="button button-green" data-dismiss="modal">Back</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div aria-hidden="true" aria-labelledby="" class="modal fade transfer-tickets-modal app-modal"
+        id="purchase-order-modal" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body matches">
+              <div class="modal-title"><span>Booking No.</span>
+                <h6 class="mt-2"></h6>
+              </div>
+              <div class="slider-arrows"><a href="https://www.tazkarti.com/" id="slider-left"><span
+                    class="arrowSlider">&gt;</span></a><a href="https://www.tazkarti.com/" id="slider-right"><span
+                    class="arrowSlider">&gt;</span></a></div><!---->
+            </div>
+            <div class="book-ticket-modal-footer clearfix"><button class="button button-green d-none" type="button">
+                Back </button><button aria-label="Close" class="button button-green" id="closePaymentHistoryDetails">
+                Close </button></div>
+          </div>
+        </div>
+      </div>
+      <div aria-hidden="true" aria-labelledby="" class="modal fade transfer-tickets-modal app-modal"
+        id="renew-purchase-order-modal" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-body matches">
+              <div class="modal-title"><span>Purchase Order</span>
+                <h6 class="mt-2"></h6>
+              </div><!---->
+            </div>
+            <div class="book-ticket-modal-footer clearfix"><button class="button button-green d-none" type="button">
+                Back </button><button aria-label="Close" class="button button-green" id="closePaymentHistoryDetails">
+                Close </button></div>
+          </div>
+        </div>
+      </div><p-confirmdialog class="ng-tns-c6-1"><!----></p-confirmdialog><app-footer>
+        <div class="footer logged-in">
+          <div class="container">
+            <ul class="links">
+              <li><a href="javascript:void(0)"><img alt="" src="./Tazkarti_files/tazkarti.svg"></a></li>
+              <li><a href="javascript:void(0)">Home</a></li>
+              <li><a href="javascript:void(0)">Stadium Locations</a></li>
+              <li><a href="javascript:void(0)">Our Stores</a></li>
+              <li><a href="javascript:void(0)">FAQ</a></li>
+              <li><a href="javascript:void(0)">About Tazkarti</a></li>
+              <li><a href="javascript:void(0)">Contact Us</a></li>
+            </ul>
+            <div class="copy-rights">© 2023 Tazkarti. All rights reserved.</div>
+          </div>
+        </div><p-confirmdialog class="ng-tns-c6-3"><!----></p-confirmdialog>
+      </app-footer>
+    </app-user-tickets><p-toast position="top-center" class="ng-tns-c1-0">
+      <div class="ng-tns-c1-0 ui-toast ui-widget ui-toast-top-center"><!----></div>
+    </p-toast><!----></app-root>
+  <script type="text/javascript" src="./Tazkarti_files/runtime.b2ad6ab212bc812675a8.js.download"></script>
+  <script type="text/javascript" src="./Tazkarti_files/es2015-polyfills.f70ede54a5010ad33b36.js.download"
+    nomodule=""></script>
+  <script type="text/javascript" src="./Tazkarti_files/polyfills.97a01cd49377eeaac7a6.js.download"></script>
+  <script type="text/javascript" src="./Tazkarti_files/scripts.6d9a83bfa1c904fe043c.js.download"></script>
+  <script type="text/javascript" src="./Tazkarti_files/main.0f25ed9b01f770f2cc6d.js.download"></script>
+
+
+</body>
+
+</html>
